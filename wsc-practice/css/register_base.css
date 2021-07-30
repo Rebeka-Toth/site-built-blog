@@ -1,0 +1,72 @@
+/**
+ * ÁTTEKINTÉS
+ *
+ * A projekt több különálló style sheetre van felbontva:
+ *
+ * normalize.min.css.....CSS reset, így a böngészők egyenlő állásból indulnak.
+ * base.css..............Globális szabályok és helperek.
+ * layout.css............Az oldal elrendezését kontrolláló CSS-szabályok.
+ * components.css........Az oldalt felépítő komponensek saját CSS-e.
+ */
+
+
+/**
+ * TARTALOMJEGYZÉK
+ *
+ * BEÁLLÍTÁSOK
+ * Box-sizing...........Az oldalunk globális alapbeállításai.
+ * Base font-size.......Az alap betűméret deklarálása.
+ * Margins..............Top és bottom marginok globális értékei.
+ * Anchor...............A linkek alapértelmezett beállításai.
+ *
+ * TIPOGRÁFIA
+ * Headingek............Tipográfiai stílusok.
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #BEÁLLÍTÁSOK
+\*------------------------------------*/
+
+
+*    { box-sizing: border-box;} /* [1] */
+
+
+html { font-size:  14px; } /* [2] */
+
+
+h2, h6,
+p,
+ul {
+  margin: 0; /* [3] */
+}
+
+
+h2, h6 {
+  margin-bottom: 1.6666vh; /* [4] */
+}
+
+
+a {
+  text-decoration:  none;
+  cursor:           pointer;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #TIPOGRÁFIA
+\*------------------------------------*/
+
+body {
+  color:        #211138;
+  font-family:  'Montserrat', sans-serif;
+}
+
+
+h2 { font-size: 4.4444vh; }

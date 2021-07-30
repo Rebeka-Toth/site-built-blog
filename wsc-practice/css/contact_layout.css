@@ -1,0 +1,92 @@
+/**
+ * ÁTTEKINTÉS
+ *
+ * Ez a fájl kezeli az oldal elrendezését (layoutját). Ahelyett, hogy egyenként,
+ * a komponensekhez kötjük az elhelyezésüket, készítünk egy külön rendszert,
+ * amelynek semmi más dolga nincs, mint megmondani egyes elemeknek, hogy
+ * mekkorák legyenek, és hol jelenjenek meg.
+ *
+ * Az itt deklarált classokat aztán ráhívhatjuk bármilyen containerre,
+ * hogy az a megfelelő méretet öltse, és a megfelelő módon viselkedjen.
+ */
+
+
+/**
+ * TARTALOMJEGYZÉK
+ *
+ * ELRENDEZÉS
+ * Elemek.................Magukra a containerekre vonatkozó méretszabályok.
+ * Módosítók..............Az elrendezést módosító szabályok, pl. floatok.
+ *
+ * TÉRKÖZÖK
+ * Vízszintes térközök....Containerek közötti vízszintes whitespace szabályai.
+ *
+ * HELPEREK
+ * Clearfix...............Floatolt containerekre hívható class.
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #ELRENDEZÉS
+\*------------------------------------*/
+
+
+.layout__item--full-width {
+    width:                  100%;
+}
+
+.layout__item--70-percent {
+    width:                  70%;
+}
+
+.layout__item--50-percent {
+    width:                  50%;
+}
+
+.layout__item--50-percent-w-gutter {
+    width:                  calc(50% - 1.071rem);
+}
+
+.layout__item--content-w-sticked-footer {
+    min-height:             calc(100vh - 80px);
+}
+
+.layout__item--centered-horizontally {
+    margin-left:            auto;
+    margin-right:           auto;
+}
+
+.layout__item--floated-left {
+    float: left;
+}
+
+.layout__item--floated-right {
+    float: right;
+}
+
+/*------------------------------------*\
+  #TÉRKÖZÖK
+\*------------------------------------*/
+
+
+.gutter--horizontal-big {
+    margin-bottom: 2.857rem;
+}
+
+.gutter--horizontal-small {
+    margin-bottom: 2.142rem;
+}
+
+
+/*------------------------------------*\
+  #HELPEREK
+\*------------------------------------*/
+
+.clearfix:after {
+    content:        "";
+    display:        table;
+    clear:          both;
+}
